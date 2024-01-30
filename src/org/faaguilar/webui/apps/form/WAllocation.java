@@ -202,20 +202,16 @@ public class WAllocation extends Allocation
 		row.appendCellChild(dateLabel.rightAlign());
 		row.appendCellChild(dateField.getComponent());
 		row.appendCellChild(organizationLabel.rightAlign());
-		organizationPick.getComponent().setHflex("true");
 		row.appendCellChild(organizationPick.getComponent(),1);
 		
 		row = rows.newRow();
 		row.appendCellChild(bpartnerLabel.rightAlign());
-		bpartnerSearch.getComponent().setHflex("true");
 		row.appendCellChild(bpartnerSearch.getComponent(),2);
 		row.appendCellChild(bpartnerLabel2.rightAlign());
-		bpartnerSearch2.getComponent().setHflex("true");
 		row.appendCellChild(bpartnerSearch2.getComponent(),2);
 		
 		row = rows.newRow();
 		row.appendCellChild(currencyLabel.rightAlign(),1);
-		currencyPick.getComponent().setHflex("true");
 		row.appendCellChild(currencyPick.getComponent(),1);		
 		row.appendCellChild(multiCurrency,1);		
 		row.appendCellChild(autoWriteOff,2);
@@ -235,7 +231,6 @@ public class WAllocation extends Allocation
 		differenceField.setHflex("true");
 		row.appendCellChild(differenceField);
 		row.appendCellChild(chargeLabel.rightAlign());
-		chargePick.getComponent().setHflex("true");
 		row.appendCellChild(chargePick.getComponent());
 		allocateButton.setHflex("true");
 		row.appendCellChild(allocateButton);
@@ -267,7 +262,6 @@ public class WAllocation extends Allocation
 		paymentLayout.appendChild(center);
 		center.appendChild(paymentTable);
 		paymentTable.setWidth("99%");
-		paymentTable.setHeight("99%");
 		center.setStyle("border: none");
 		
 		north = new North();
@@ -282,7 +276,6 @@ public class WAllocation extends Allocation
 		invoiceLayout.appendChild(center);
 		center.appendChild(invoiceTable);
 		invoiceTable.setWidth("99%");
-		invoiceTable.setHeight("99%");
 		center.setStyle("border: none");
 		//
 		center = new Center();
@@ -292,8 +285,8 @@ public class WAllocation extends Allocation
 		infoPanel.setVflex("1");
 		
 		infoPanel.setStyle("border: none");
-		infoPanel.setWidth("100%");
-		infoPanel.setHeight("100%");
+		// infoPanel.setWidth("100%");
+		// infoPanel.setHeight("100%");
 		
 		north = new North();
 		north.setStyle("border: none");
@@ -305,8 +298,8 @@ public class WAllocation extends Allocation
 		center.setStyle("border: none");
 		infoPanel.appendChild(center);
 		center.appendChild(invoicePanel);
-		invoicePanel.setHflex("1");
-		invoicePanel.setVflex("1");
+		// invoicePanel.setHflex("1");
+		// invoicePanel.setVflex("1");
 	}   //  jbInit
 
 	/**
